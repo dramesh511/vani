@@ -6,11 +6,3 @@
       shell: uptime
     - name: check date
       shell: date
-    - name: Copy file with owner and permissions
-      ansible.builtin.copy:
-        src: /tmp/vani.txt
-        dest: /tmp/vaninew.txt
-        owner: ubuntu
-        group: ubntu
-        mode: '0644'
-        remote_src: yes
